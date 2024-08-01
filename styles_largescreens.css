@@ -1,0 +1,291 @@
+
+/* LARGE SCREENS: min-width 951px */
+
+@media screen and (min-width: 951px) {
+	body{
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size: cover;
+	}
+	
+	
+	
+    /* Header and foooter */
+	header{
+		width:100%;	
+		height:200px;
+	}
+	
+	footer{
+		width:100%;
+		height:120px;
+		background-color:black;
+		color:white;
+		padding-left:5%;
+		padding-top:2%;
+	}
+	
+
+	h2, h3{ /* Shared rules for h2 and h3*/
+		font-family:renogare, sans-serif;
+		text-transform:uppercase;
+		color:#0A2C36;/*#990000*/
+		clear:both;
+	}
+
+	h2 { /* Headline in content */
+		font-size:2.5em;
+		text-shadow:1px 1px 1px #515151; /* Shadow may need tweaking */
+		margin-bottom:10px;
+	}
+	
+	h3{/* Subheadline in articles */
+		font-size:1.5em;
+		text-shadow:1px 1px 1px #515151; /* Shadow may need tweaking */
+	}
+    
+    /* Main & sections */
+	main{
+		width:100%;
+	}
+    
+    section{
+        padding-top:10px;
+        overflow:hidden;
+    }
+    
+    /* Nav */
+	nav{
+		padding-top:1em;
+		padding-bottom:1em;
+		margin-top:60px;
+		margin-bottom:100px;
+		background-color:rgba(0,0,0,0.20);
+	}
+	
+	nav a:first-child{
+		margin-left:220px;
+	}
+	
+	#logo {
+		position:absolute;
+		top:12px;
+		left:30px;
+	}
+	
+	nav a{
+		font-size: 1.5em;
+		margin-right: 1.3em;
+		font-family: renogare, sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		position:relative;
+	}
+	
+	/*Source for documentation: https://www.w3schools.com/css/css3_animations.asp*/
+	@keyframes linkup {
+		from {text-shadow:0px 0px 0px black;}
+		to {text-shadow:0px 10px 10px black;}
+	}
+	
+	nav a:hover{
+		animation-name:linkup;
+		animation-duration:0.5s;
+		-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    	animation-fill-mode: forwards;
+	}
+    
+    
+	/* Articles on large screens: */
+	article {
+		clear:both;
+		display:block;
+		width:100%;
+		min-height: 400px;
+		padding-bottom:1%;
+		padding-top:1%;
+		padding-left:5%;
+		padding-right:5%;
+		background-color:rgba(255,255,255,0.9);
+		margin-bottom:80px;
+		border-top: 1px solid #C9C9C9;
+		border-bottom: 1px solid #C9C9C9;
+		box-shadow:0px 0px 10px 0px black;
+        overflow:hidden;
+	}
+    
+    /* GAMES.HTML - Large screens*/
+	article.game a{
+		display:block;
+        float:left;
+		width:70%;
+		text-align:center;
+	}
+	
+	article.game section a img{
+		max-width:100%;
+        max-height: 100%;
+		box-shadow:none;
+	}
+
+    /* BLOG */
+    article.post img{
+        float:left;
+        margin-right:15px;
+        border-radius:5px;
+        box-shadow: 5px 5px 5px black;
+    }
+    
+    
+    /* SECTIONS - INSPIRATION.HTML - Large screens */
+
+	.left {	
+		width:60%;
+		float:left;
+		padding-right:30px;
+        box-sizing: border-box;
+        overflow:hidden;
+	}
+
+	.left img{
+		width:100%;
+        border-radius:6px 6px 6px 6px;
+        max-width:100%;
+        max-height:100%;
+        /*min-height:400px;*/
+	}
+	
+	.right {
+		width:40%;
+		float:right;
+        box-sizing: border-box;
+        overflow:hidden;
+	}
+	
+	.right img{
+		border:1px solid grey;
+		border-radius:7px 7px 7px 7px;
+		box-shadow: 2px 2px 10px black;
+		margin-bottom: 20px;
+		width:100%;
+	}
+    
+    /*
+    article img{
+		border:1px solid grey;
+		border-radius:6px 6px 6px 6px;
+		box-shadow: 2px 2px 10px black;
+		float:left;
+		display:flex;
+		box-sizing:border-box;
+		width:50%;
+		white-space:nowrap;
+		justify-content:space-between;
+	}
+    */
+
+    /* PINTEREST EMBED */
+	article div.pinboard{
+		width:100%;
+		text-align:center;
+	}
+	div.pinboard a{
+		width:100%;
+	}
+
+
+	
+	/* INDEX: Splash Menu - large screens */
+	.splashmenu{
+		margin-top:5em;
+		width:100%;
+		margin-bottom: 150px;
+		display:flex;
+		justify-content: space-around;
+	}
+	
+	/* Clickable link on frontpage */
+	.splashmenuitem{
+		width:45%;
+		margin-left:3em;
+		margin-right:3em;
+	}
+	
+	.splashmenu a{
+		display:block;
+		border:2px solid black;
+		border-radius:10px 10px 10px 10px;
+		font-family:renogare, sans-serif;
+		font-size:30px;
+		text-decoration:none;
+		padding: 50px;
+		text-transform:uppercase;
+		box-shadow:2px 2px 2px black;
+		text-align:center;
+		margin-bottom:20px;
+	}
+	
+	.splashmenu a:hover {
+		box-shadow:8px 8px 5px black;
+	}
+
+	
+	
+	section.video {
+		clear:both;
+		width:100%;
+		text-align:center;
+	}
+	
+	section.ads{
+		width:100%;
+		height:370px;
+	}
+	
+	section.ads div{
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	
+	section.video iframe{
+		width:800px;
+		border:1px solid black;
+		border-radius:10px 10px 10px 10px;
+		box-shadow:5px 5px 10px black;
+	}
+	
+	ul{
+		margin-left:25px;
+		margin-top:-15px;
+		list-style-type:decimal;
+	}
+    
+	/* DESIGNS.HTML - Large screens */
+	#designs article section p.servusP{
+		width:50%;
+		float:left;
+		padding-left:20px;
+		padding-top:20px;
+	}
+	
+	/* DESIGN.HTML - Large screens */
+	
+	section.ads a{
+		float:left;
+		margin-right:20px;
+	}
+	
+	section.ads p{
+		text-align:left;
+	}
+	
+	aside{
+	position:fixed;
+	right:0px;
+	width:20%;
+	padding-left:10px;
+	padding-right:10px;
+	}
+	
+} /* End min-width 1080*/

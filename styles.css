@@ -1,0 +1,485 @@
+/* GENERAL */
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:renogare, sans-serif;
+}
+.currentpage {
+	text-shadow:0px 0px 8px white;
+}
+
+/* FONTS */
+@font-face {
+    font-family: continuum;
+    src: url(contm.ttf);
+}
+
+@font-face {
+    font-family: renogare;
+    src: url(renogare.ttf);
+}
+	
+.bold{
+	font-weight: bold;
+}
+
+p, ul{
+	font-family:continuum, Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	margin-bottom:1.1em;
+}
+
+/* Used for data headlines in Inspiration*/
+span {
+	font-family:renogare, sans-serif;
+	font-size:1em;
+	text-transform:uppercase;
+}
+
+
+/* MENU AND LINKS */
+a, a:visited{
+	color:black;
+}
+
+
+/* -------------------------------------------------------- */
+/* MOBILE */
+@media screen and (max-width : 1002px ){
+	header{
+		width:100%;
+		padding-top:1em;
+		padding-bottom:1em;
+		margin-top:60px;
+		background-color:rgba(0,0,0,0.20);
+	}
+
+	
+	h2 { /* Headline for content*/
+		font-family:renogare, sans-serif;
+		font-size:2.5em;
+		text-transform:uppercase;
+		color:#990000;
+	}
+	
+	h3{ /* Subheadline in articles */
+		font-family:renogare, sans-serif;
+		font-size:1.5em;
+		text-transform:uppercase;
+		color:#990000;
+	}
+	
+	body{
+		text-align:center;
+	}
+	
+	main{
+		width:100%;
+		text-align:left;
+		padding-left:10px;
+		padding-right:10px;
+		margin-top:20px;
+	}
+	
+	nav{
+	width:100%;
+	}
+	
+	
+	nav a{
+		font-size: 2em;
+		margin-right: 1.3em;
+		font-family: renogare, sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		display:block;
+	}
+	
+	#logo {
+		width:149px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:20px;
+	}
+	
+	article{
+		margin-bottom:2em;
+	}
+	
+	article img, section.left img, section.right img{
+		width:100%;
+	}
+	
+	/* INSPIRATION.HTML - Mobile layout */
+	
+	.left, .right {	
+		width:100%;
+		margin-bottom:2em;
+	}
+
+	.right {
+		text-align:center;
+	}
+	
+	.right img{/* Targets: Screenshot in Inspiration */
+		border:1px solid black;
+		border-radius:2px 2px 2px 2px;
+	}
+	
+	section iframe { /* Targets: Video*/
+		border:1px solid black;
+		border-radius:10px 10px 10px 10px;
+		box-shadow:5px 5px 10px black;
+	}
+	
+	section a img{/* Target: Book recommendation*/
+		box-shadow:5px 5px 10px black;
+	}
+	
+	section.video {
+		width:100%;
+		text-align:center;
+	}
+	
+	section.video iframe{
+		width:100%;
+		height:450px;
+	}
+	
+	section.ads{
+		width:100%;
+		height:415px;
+		padding-top:20px;
+		text-align:center;
+		overflow:hidden;
+	}
+			
+	section.ads a{
+		float:left;
+		margin-right:20px;
+	}
+	
+	section.ads p{
+		text-align:left;
+	}
+	
+	section.ads div{
+		display:block;
+	}
+	
+	ul{
+		margin-left:25px;
+		margin-top:-15px;
+		list-style-type:decimal;
+	}
+	
+	/* INDEX.HTML - mobile screens */
+	.splashmenu{
+		margin-top:2em;
+		width:100%;
+		margin-bottom: 150px;
+}
+	.splashmenuitem{
+		width:100%;
+	}
+	
+	.splashmenu a{
+		display:block;
+		border:2px solid black;
+		border-radius:10px 10px 10px 10px;
+		font-family:renogare, sans-serif;
+		font-size:30px;
+		text-decoration:none;
+		padding: 50px;
+		text-transform:uppercase;
+		box-shadow:2px 2px 2px black;
+		text-align:center;
+		margin-bottom:20px;	
+	}
+	
+
+	.splashmenu a:hover {
+	box-shadow:8px 8px 5px black;
+	}
+	
+	/* GAMES.HTML - mobile size */
+	section.game{
+		width:100%;
+		border:3px solid black;
+		border-radius:5px 5px 5px 5px;
+		min-height:180px;
+		text-align:center;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+		
+} /* ----- End mobile layout -------------------- */
+
+
+/* LARGE SCREENS */
+
+@media screen and (min-width: 951px) {
+	body{
+		background-image:url(images/metalbg.jpg);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size: cover;
+	}
+	
+	header{
+		width:100%;	
+		height:200px;
+	}
+	
+
+	
+	footer{
+		width:100%;
+		height:120px;
+		background-color:black;
+		color:white;
+		padding-left:5%;
+		padding-top:2%;
+	}
+	
+	main{
+		width:100%;
+	}
+
+	h2, h3{ /* Shared rules for h2 and h3*/
+		font-family:renogare, sans-serif;
+		text-transform:uppercase;
+		color:#990000;
+	}
+
+	h2 { /* Headline in content */
+		font-size:2.5em;
+		text-shadow:2px 2px 3px #515151; /* Shadow may need tweaking */
+	}
+	
+	h3{/* Subheadline in articles */
+		font-size:1.5em;
+		text-shadow:2px 2px 3px #515151; /* Shadow may need tweaking */
+	}
+
+	nav{
+		padding-top:1em;
+		padding-bottom:1em;
+		margin-top:60px;
+		margin-bottom:100px;
+		background-color:rgba(0,0,0,0.20);
+	}
+	
+	nav a:first-child{
+		margin-left:220px;
+	}
+	
+	#logo {
+		position:absolute;
+		top:12px;
+		left:30px;
+	}
+	
+	nav a{
+		font-size: 1.5em;
+		margin-right: 1.3em;
+		font-family: renogare, sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		position:relative;
+	}
+	
+	/*Source for documentation: https://www.w3schools.com/css/css3_animations.asp*/
+	@keyframes linkup {
+		from {bottom:0px;}
+		to {bottom:5px;}
+	}
+	
+	nav a:hover{
+		animation-name:linkup;
+		animation-duration:0.5s;
+		-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    	animation-fill-mode: forwards;
+		-webkit-animation-timing-function: ease-out; /* Safari 4.0 - 8.0 */
+    	animation-timing-function: ease-out;
+	}
+	/* Articles on large screens: */
+	article {
+		clear:both;
+		display:block;
+		width:100%;
+		padding-bottom:1%;
+		padding-top:1%;
+		padding-left:5%;
+		padding-right:5%;
+		background-color:rgba(255,255,255,0.5);
+		margin-bottom:80px;
+		border-top: 1px solid #C9C9C9;
+		border-bottom: 1px solid #C9C9C9;
+		box-shadow:0px 0px 10px 0px black;
+	}
+	article div.pinboard{
+		width:100%;
+		text-align:center;
+	}
+	div.pinboard a{
+		width:100%;
+	}
+
+	article img{
+		border:1px solid grey;
+		border-radius:7px 7px 7px 7px;
+		box-shadow: 2px 2px 10px black;
+		float:left;
+		margin-right:25px;
+	}
+	
+	/* INDEX: Splash Menu - large screens */
+	.splashmenu{
+		margin-top:5em;
+		width:100%;
+		margin-bottom: 150px;
+		display:flex;
+		justify-content: space-around;
+	}
+	
+	.splashmenuitem{
+		width:45%;
+	}
+	
+	.splashmenu a{
+		display:block;
+		border:2px solid black;
+		border-radius:10px 10px 10px 10px;
+		font-family:renogare, sans-serif;
+		font-size:30px;
+		text-decoration:none;
+		padding: 50px;
+		text-transform:uppercase;
+		box-shadow:2px 2px 2px black;
+		text-align:center;
+		margin-bottom:20px;
+		
+	}
+	
+	.splashmenu a:hover {
+		box-shadow:8px 8px 5px black;
+	}
+
+	
+	/* INSPIRATION.HTML - Large screens */
+
+	.left {	
+		width:60%;
+		float:left;
+		padding-right:30px;
+	}
+
+	.left img{
+		width:100%;
+	}
+	
+	.right {
+		width:40%;
+		float:right;
+	}
+	
+	.right img{
+		border:1px solid grey;
+		border-radius:7px 7px 7px 7px;
+		box-shadow: 2px 2px 10px black;
+		margin-bottom: 20px;
+		width:100%;
+	}
+
+	section.video {
+		clear:both;
+		width:100%;
+		text-align:center;
+	}
+	
+	section.ads{
+		width:100%;
+		height:370px;
+	}
+	
+	section.ads div{
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	
+	section.video iframe{
+		width:800px;
+		border:1px solid black;
+		border-radius:10px 10px 10px 10px;
+		box-shadow:5px 5px 10px black;
+	}
+	
+	ul{
+		margin-left:25px;
+		margin-top:-15px;
+		list-style-type:decimal;
+	}
+	
+	/* DESIGN.HTML - Large screens */
+	
+	section.ads a{
+		float:left;
+		margin-right:20px;
+	}
+	
+	section.ads p{
+		text-align:left;
+	}
+	
+	section a img{/* Target: Book recommendation*/
+		box-shadow:5px 5px 10px black;
+	}
+	
+	
+	/* GAMES.HTML - Large screens*/
+	section.game{
+		width:100%;
+		min-height:300px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	
+	section.game a{
+		float:left;
+		width:50%;
+		text-align:center;
+	}
+	
+	section.game a img{
+		max-width:100%;
+		box-shadow:none;
+	}
+	
+	section.game p{
+		float:left;
+		width:50%;
+	}
+
+
+
+	/* BLOG.HTML - Large screens */
+	article.post {
+		width:80%;
+		float:left; /* Necessary although combined with position fixed. */
+	}
+
+	aside{
+	position:fixed;
+	right:0px;
+	width:20%;
+	padding-left:10px;
+	padding-right:10px;
+	}
+	
+} /* End min-width 1080*/

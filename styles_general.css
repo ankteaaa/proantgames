@@ -1,0 +1,104 @@
+/* -- GENERAL -- */
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:renogare, sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+/* -- BODY BACKGROUNDS -- */
+body#index{
+	/*background-image:url("images/backgrounds/bgSailingLeft.jpg");*/
+}
+
+body#games{
+	background-image:url("images/backgrounds/bgLeaf.jpg");
+}
+
+body#designs {
+	background-image:url("images/backgrounds/bgBoat.jpg");
+}
+
+body#inspiration {
+	background-image:url("images/backgrounds/bgCoop.jpg");
+}
+
+body#learn {
+	background-image:url("images/backgrounds/bgSailingRight.jpg");
+}
+
+body#blog {
+	background-image:url("images/backgrounds/bgStrong.jpg");
+}
+
+.currentpage {
+	text-shadow:0px 0px 8px white;
+	border-bottom:1px solid grey;
+	padding-bottom:10px;
+}
+
+/* -- FONTS -- */
+@font-face {
+    font-family: continuum;
+    src: url(contm.ttf);
+}
+
+@font-face {
+    font-family: renogare;
+    src: url(renogare.ttf);
+}
+	
+.bold{
+	font-weight: bold;
+}
+
+p, ul{
+	font-family:continuum, Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	margin-bottom:1.1em;
+}
+
+span { /* Used for data headlines in Inspiration*/
+	font-family:renogare, sans-serif;
+	font-size:1em;
+	text-transform:uppercase;
+}
+
+
+/* -- MENU AND LINKS -- */
+a, a:visited{
+	color:black;
+}
+
+.splashmenuitem {
+    text-align:center;
+}
+
+.splashmenuitem a{
+	background-position:center;
+	background-repeat:no-repeat;
+    background-color:rgba(255,255,255, 0.9);
+    background-size: cover;
+	color:white;
+}
+
+
+/* -- BACKGROUND IMAGES FOR SPLASH LINKS -- */
+#splash_games a{
+    background-image:url(images/dicesbg.jpg);
+}
+
+#splash_inspiration a{
+    background-image:url(images/889bg.jpg);
+}
+
+#splash_design a{
+    background-image:url(images/igbg2.jpg);
+}
